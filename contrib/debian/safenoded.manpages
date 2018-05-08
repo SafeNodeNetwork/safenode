@@ -1,0 +1,3 @@
+debian/manpages/safenoded.1
+debian/manpages/safenode.conf.5
+debian/manpages/safenode-cli.1

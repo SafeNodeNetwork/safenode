@@ -1,0 +1,11 @@
+[Protocol]
+exec=safenode-qt '%u'
+protocol=safenode
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

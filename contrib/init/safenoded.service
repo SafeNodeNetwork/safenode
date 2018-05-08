@@ -1,0 +1,22 @@
+[Unit]
+Description=SafeNode's distributed currency daemon
+After=network.target
+
+[Service]
+User=safenode
+Group=safenode
+
+Type=forking
+PIDFile=/var/lib/safenoded/safenoded.pid
+ExecStart=/usr/bin/safenoded -daemon -pid=/var/lib/safenoded/safenoded.pid \
+-conf=/etc/safenode/safenode.conf -datadir=/var/lib/safenoded -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

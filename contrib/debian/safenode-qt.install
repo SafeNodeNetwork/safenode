@@ -1,0 +1,6 @@
+usr/local/bin/safenode-qt usr/bin
+share/pixmaps/safenode32.xpm usr/share/pixmaps
+share/pixmaps/safenode16.xpm usr/share/pixmaps
+share/pixmaps/safenode128.png usr/share/pixmaps
+debian/safenode-qt.desktop usr/share/applications
+debian/safenode-qt.protocol usr/share/kde4/services/
